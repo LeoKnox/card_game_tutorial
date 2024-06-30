@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Card } from "./Card.js";
 
 export const Cards = () => {
   const [deck, setDeck] = useState([
@@ -19,5 +20,11 @@ export const Cards = () => {
     { id: 8, name: "haiiro", stat: "" },
     { id: 8, name: "haiiro", stat: "" },
   ]);
-  return <p>Cards</p>;
+  return (
+<div className="container">
+    {deck.map(item => (
+        <Card />
+    ))}
+    </div>  
+)
 };
