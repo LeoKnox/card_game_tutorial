@@ -3,8 +3,9 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -13,5 +14,22 @@ body {
   color: rgb(168, 54, 54);
   display: flex;
   justify-content: center;
-align-items: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+}
+
+.container {
+  height: 30em;
+  width: 30em;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4,1fr);
 }
