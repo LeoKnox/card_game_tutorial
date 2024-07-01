@@ -1,7 +1,3 @@
-export const Card = () => {
-  return (
-<div className="card">
-    card
-    </div>  
-)
-}
+export const Card = ({ item }) => {
+  return <div className="card">{item.name}</div>;
+};
