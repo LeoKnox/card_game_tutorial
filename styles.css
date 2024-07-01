@@ -41,14 +41,15 @@ h1 {
 
 .singleCard {
   color: white;
-  animation: 2s hideCard linear;
+  animation-name: hideCard;
+  animation-duration: 4s;
 }
 
 @keyframes hideCard {
-  0% {
-    transform: (color: black);
+  from {
+    transform: (color: "red");
   }
-  100% {
-    transform: (color: black);
+  to {
+    transform: (color: "green");
   }
 }
