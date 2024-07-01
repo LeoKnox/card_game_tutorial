@@ -28,7 +28,6 @@ h1 {
   align-items: center;
   border-radius: 0.2em;
   transform: rotateY(180deg);
-
 }
 
 .container {
@@ -45,11 +44,11 @@ h1 {
   animation: 2s hideCard linear;
 }
 
-@keyframes hideCard(
+@keyframes hideCard {
   0% {
-  transform: (color(white));
+    transform: (color: black);
+  }
+  100% {
+    transform: (color: black);
+  }
 }
-100% {
-  transform: (color(black));
-}
-)
