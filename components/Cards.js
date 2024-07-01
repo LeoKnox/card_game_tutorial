@@ -21,10 +21,10 @@ export const Cards = () => {
     { id: 8, name: "haiiro", stat: "" },
   ]);
   return (
-<div className="container">
-    {deck.map(item => (
-        <Card />
-    ))}
-    </div>  
-)
+    <div className="container">
+      {deck.map((item, index) => (
+        <Card key={index} item={item} />
+      ))}
+    </div>
+  );
 };
