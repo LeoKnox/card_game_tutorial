@@ -43,7 +43,6 @@ h1 {
 }
 
 .singleCard {
-
   animation: 4s hideCard linear;
 }
 
@@ -57,5 +56,11 @@ h1 {
 }
 
 .card.active {
-  color: black;
+  color: #222222;
+}
+.card.wrong {
+  background-color: red;
+}
+.card.correct {
+  background-color: lightblue;
 }
