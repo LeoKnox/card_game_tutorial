@@ -23,9 +23,11 @@ export const Cards = () => {
     ].sort(() => Math.random() - 0.5)
   );
 
+  const [prev, setPrev] = useState(-1);
+
   const handleClick = (id) => {
-   alert(id);
-  }
+    alert(id);
+  };
 
   return (
     <div className="container">
