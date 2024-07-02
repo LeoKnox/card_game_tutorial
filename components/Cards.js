@@ -22,10 +22,15 @@ export const Cards = () => {
       { id: 8, name: "haiiro", stat: "" },
     ].sort(() => Math.random() - 0.5)
   );
+
+  const handleClick = (id) => {
+   alert(id);
+  }
+
   return (
     <div className="container">
       {deck.map((item, index) => (
-        <Card key={index} item={item} />
+        <Card key={index} item={item} id={index} handleClick={handleClick} />
       ))}
     </div>
   );
