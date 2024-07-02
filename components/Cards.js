@@ -4,9 +4,9 @@ import { Card } from "./Card.js";
 export const Cards = () => {
   const [deck, setDeck] = useState(
     [
-      { id: 1, name: "ao", stat: "" },
-      { id: 1, name: "ao", stat: "" },
-      { id: 2, name: "aka", stat: "" },
+      { id: 1, name: "ao", stat: "flipped" },
+      { id: 1, name: "ao", stat: "correct" },
+      { id: 2, name: "aka", stat: "wrong" },
       { id: 2, name: "aka", stat: "" },
       { id: 3, name: "midori", stat: "" },
       { id: 3, name: "midori", stat: "" },
