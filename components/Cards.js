@@ -4,9 +4,9 @@ import { Card } from "./Card.js";
 export const Cards = () => {
   const [deck, setDeck] = useState(
     [
-      { id: 1, name: "ao", stat: "flipped" },
-      { id: 1, name: "ao", stat: "correct" },
-      { id: 2, name: "aka", stat: "wrong" },
+      { id: 1, name: "ao", stat: "" },
+      { id: 1, name: "ao", stat: "" },
+      { id: 2, name: "aka", stat: "" },
       { id: 2, name: "aka", stat: "" },
       { id: 3, name: "midori", stat: "" },
       { id: 3, name: "midori", stat: "" },
@@ -26,7 +26,7 @@ export const Cards = () => {
   const [prev, setPrev] = useState(-1);
 
   const handleClick = (id) => {
-    alert(id);
+    deck[id].stat = "flipped";
   };
 
   return (
