@@ -27,6 +27,7 @@ export const Cards = () => {
 
   const handleClick = (id) => {
     deck[id].stat = "flipped";
+    setDeck([...deck]);
   };
 
   return (
