@@ -28,8 +28,6 @@ h1 {
   align-items: center;
   border-radius: 0.2em;
   /*transform: rotateY(180deg);*/
-  animation-name: hideCard;
-  animation-duration: 4s;
 }
 
 .container {
@@ -42,14 +40,14 @@ h1 {
 }
 
 .singleCard {
-  color: white;
+  animation: 4s hideCard linear;
 }
 
 @keyframes hideCard {
-  from {
-    transform: (color: "red");
+  0% {
+    transform: (color: "white");
   }
-  to {
+  100% {
     transform: (color: "green");
   }
 }
